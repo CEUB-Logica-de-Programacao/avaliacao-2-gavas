@@ -42,7 +42,7 @@ def q2(n):
         x +=1
         n1+=1
         n2+=1
-    R.sort(R=reverse=True)
+    R.sort(reverse=True)
     return R[0]
     pass
 
