@@ -21,12 +21,15 @@
 
 def q1(names, heights):
     lista = []
+    listacerta = []
     x = 0
     for i in names:
         lista.append([i, heights[x]])
         x += 1
     lista=sorted(lista, key=lambda item: item[1], reverse=True)
-    return lista
+    for i in range(len(lista)):
+        listacerta.append(lista[i][0])
+    return listacerta
     pass
 
 
