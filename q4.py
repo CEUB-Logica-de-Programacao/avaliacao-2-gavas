@@ -25,7 +25,14 @@
 # Dado um numeral romano, converta-o para um número inteiro.
 
 def q4(numeral):
-    # Escreva seu código aqui
+    valromano = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+    valint=0
+    for i in range(len(numeral)):
+        if i > 0 and valromano[numeral[i]] > valromano[numeral[i-1]]:
+            valint += valromano[numeral[i]] -2 * valromano[numeral[i-1]]
+        else:
+            valint+=valromano[numeral[i]]
+    return valint
     pass
 
 

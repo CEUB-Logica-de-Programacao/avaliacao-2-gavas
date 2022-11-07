@@ -25,7 +25,25 @@
 
 
 def q2(n):
-    # Escreva seu código aqui
+    R = [1,2,3]
+    if n==1:
+        return R[0]
+    if n==2:
+        return R[1]
+    if n == 3:
+        return R[2]
+    n-=3
+    x=1
+    n1=1
+    n2=2
+    while x <= n:
+        nv = R[n1] + R[n2]
+        R.append(nv)
+        x +=1
+        n1+=1
+        n2+=1
+    R.sort(reverse=True)
+    return R[0]
     pass
 
 
