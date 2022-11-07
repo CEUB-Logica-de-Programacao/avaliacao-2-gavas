@@ -25,7 +25,6 @@ def q1(names, heights):
     for i in names:
         dict[i]=heights[x]
         x += 1
-    dicionariocerto = {}
     return {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True)}
     pass
 
