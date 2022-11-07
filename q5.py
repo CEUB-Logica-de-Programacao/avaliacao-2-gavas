@@ -23,7 +23,14 @@
 # ```
 
 def q5(paths):
-    # Escreva seu código aqui
+    CS = []
+    SS = []
+    for i, x in enumerate(paths):
+        CS.append(paths[i][0])
+    for i, x in enumerate(paths):
+        if paths[i][1] not in CS:
+            SS.append(paths[i][1])
+    return SS[0]
     pass
 
 
