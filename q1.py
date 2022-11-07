@@ -21,11 +21,16 @@
 
 def q1(names, heights):
     dict = {}
+    lista = []
     x = 0
     for i in names:
         dict[i]=heights[x]
         x += 1
-    return {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True)}
+    dicionariocerto = {}
+    dicionariocerto = {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True)}
+    for i in dicionariocerto:
+        lista.append(i)
+    return lista
     pass
 
 
