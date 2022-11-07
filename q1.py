@@ -20,17 +20,14 @@
 # ```
 
 def q1(names, heights):
-    dict = {}
+def q1(names, heights):
     lista = []
     x = 0
     for i in names:
-        dict[i]=heights[x]
+        lista.append([i, heights[x]])
         x += 1
-    dicionariocerto = {}
-    dicionariocerto = {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True)}
-    for i in dicionariocerto:
-        lista.append(i)
-    return lista
+    lista=sorted(lista, key=lambda item: item[1], reverse=True)
+    print(lista)
     pass
 
 
