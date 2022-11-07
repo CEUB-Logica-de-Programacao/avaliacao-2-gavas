@@ -20,15 +20,13 @@
 # ```
 
 def q1(names, heights):
-    dicionario = {}
+    dict = {}
     x = 0
     for i in names:
-        dicionario[i]=heights[x]
+        dict[i]=heights[x]
         x += 1
     dicionariocerto = {}
-    for i in sorted(dicionario, key=dicionario.get, reversed=True):
-        dicionariocerto[i] = dicionario[i] 
-    return dicionariocerto
+    return {k: v for k, v in sorted(dict.items(), key=lambda item: item[1], reverse=True)}
     pass
 
 
