@@ -38,7 +38,7 @@ def q2(n):
     n2=2
     while x <= n:
         nv = R[n1] + R[n2]
-        r.append(nv)
+        R.append(nv)
         x +=1
         n1+=1
         n2+=1
